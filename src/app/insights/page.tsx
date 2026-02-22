@@ -8,7 +8,7 @@ import { computeScores, type Scores } from "@/lib/scores";
 import { ALL_WALK_TYPES, ALL_DRIVE_TYPES, TYPE_COLORS, TYPE_LABELS } from "@/lib/mapConfig";
 import type { LatLng, CategoryData } from "@/components/AmenitiesPanel";
 
-// ── Shared display components ─────────────────────────────────────────────────
+// Shared display components 
 
 function ScoreCard({ label, value, subtitle }: { label: string; value: number; subtitle: string }) {
   const color = value >= 70 ? "#16a34a" : value >= 40 ? "#d97706" : "#dc2626";
@@ -136,8 +136,7 @@ function MapLegend({
   );
 }
 
-// ── Main content ──────────────────────────────────────────────────────────────
-
+// Main content
 function InsightsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
