@@ -46,15 +46,18 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Project structure
 
 ```
-app/
-  page.tsx          — main page, score cards, map, sidebar layout
-  api/summary/      — Gemini API route for AI neighborhood summary
-components/
-  AddressSearch.tsx — address autocomplete input
-  AmenitiesPanel.tsx — nearby places grid with walking/driving tabs
-  GoogleMap.tsx     — map with category markers and circles
-lib/
-  scores.ts         — walk, drive, and urban score computation
-  mapConfig.ts      — category types, colors, and labels
-  googleMaps.ts     — Maps JS API loader
+src/
+  app/
+    page.tsx              — main page, score cards, map, sidebar layout
+    api/
+      summary/
+        route.ts          — Gemini API route for AI neighborhood summary
+  components/
+    AddressSearch.tsx     — address autocomplete input
+    AmenitiesPanel.tsx    — nearby places grid with walking/driving tabs
+    GoogleMap.tsx         — map with category markers and circles
+  lib/
+    scores.ts             — walk, drive, and urban score computation
+    mapConfig.ts          — category types, colors, and labels
+    googleMaps.ts         — Maps JS API loader
 ```
